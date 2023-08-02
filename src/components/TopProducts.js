@@ -51,7 +51,7 @@ function TopProducts() {
             <h2 className='m-5 text-center' style={{ color: '#C98860' }}> Top Products</h2>
             <Slider {...settings}>
                 {images.map((image, index) =>
-                    <div hey={index} className='test'>
+                    <div key={index} className='test'>
                         <img src={image} alt='' style={{height: '200px', width: '80%'}}/>
                     </div>
                 )}
